@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Demo</title>
+    </head>
+
+    <body>
+        <form name="employement" action="form.java" method="post">
+            <table cellspacing = "1">
+                <tr>
+                    <td>Employement Applications</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="fname" maxlength="50" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lname" maxlength="50" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td>
+                        <select name="position">
+                            <option value="AC">Accountanct</option>
+                            <option value="RE">Receptionist</option>
+                            <option value="AD">Administrator</option>
+                            <option value="SU">Supervisor</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Experience Lavel</td>
+                    <td>
+                        <select name="experience">
+                            <option value="EL">Entry Level</option>
+                            <option value="ML">Mid Level</option>
+                            <option value="VE">Very Experienced</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job Type:</td>
+                    <td>
+                        <input type="checkbox" name="ft" /> Full-Time
+                        <input type="checkbox" name="pt" /> Part-Time
+                        <input type="checkbox" name="ct" /> Contract
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employement Status:</td>
+                    <td>
+                        <input type="radio" name="estatus" value="employed" /> Employed
+                        <input type="radio" name="estatus" value="unemployed" /> Unemployed
+                        <input type="radio" name="estatus" value="student" /> Student
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additional Comments:</td>
+                    <td>
+                        <textarea name="comments" cols="45" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" value="Submit" />
+                        <input type="reset" name="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
